@@ -24,23 +24,25 @@ export default function Error({
         
         <h1 className="text-3xl font-bold mb-4">Oops! Something went wrong</h1>
         <p className="text-zinc-400 mb-8">
-          Terjadi kesalahan saat memuat halaman. Silakan coba lagi atau kembali ke halaman utama.
+          An error occurred while loading the page. Please try again or go back to the homepage.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={reset}
             className="flex items-center justify-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors"
+            aria-label="Try again to reload the page"
           >
             <RefreshCw className="w-4 h-4" />
-            Coba Lagi
+            Try Again
           </button>
           <Link
             href="/"
             className="flex items-center justify-center gap-2 border border-zinc-700 px-6 py-3 rounded-lg font-medium hover:bg-zinc-800 transition-colors"
+            aria-label="Go back to homepage"
           >
             <Home className="w-4 h-4" />
-            Kembali ke Home
+            Back to Home
           </Link>
         </div>
 
@@ -50,6 +52,11 @@ export default function Error({
             <pre className="text-xs text-red-400 overflow-auto">
               {error.message}
             </pre>
+            {error.digest && (
+              <p className="text-xs text-zinc-600 mt-2">
+                Error ID: {error.digest}
+              </p>
+            )}
           </div>
         )}
       </div>
