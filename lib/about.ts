@@ -2,68 +2,67 @@ import { Skill, Experience } from "./types";
 
 export const skills: Skill[] = [
   // Frontend
-  { name: "React", level: 95, category: "Frontend" },
-  { name: "Next.js", level: 90, category: "Frontend" },
-  { name: "TypeScript", level: 85, category: "Frontend" },
+  { name: "React", level: 85, category: "Frontend" },
+  { name: "Next.js", level: 80, category: "Frontend" },
+  { name: "TypeScript", level: 75, category: "Frontend" },
   { name: "Tailwind CSS", level: 90, category: "Frontend" },
-  { name: "HTML/CSS", level: 95, category: "Frontend" },
+  { name: "HTML/CSS", level: 90, category: "Frontend" },
   
   // Backend
-  { name: "Node.js", level: 75, category: "Backend" },
-  { name: "Express", level: 70, category: "Backend" },
-  { name: "PostgreSQL", level: 65, category: "Backend" },
-  { name: "MongoDB", level: 70, category: "Backend" },
+  { name: "Node.js", level: 70, category: "Backend" },
+  { name: "Express", level: 65, category: "Backend" },
+  { name: "PostgreSQL", level: 60, category: "Backend" },
+  { name: "MongoDB", level: 65, category: "Backend" },
   
   // Tools
-  { name: "Git", level: 85, category: "Tools" },
-  { name: "Docker", level: 60, category: "Tools" },
-  { name: "Figma", level: 75, category: "Tools" },
+  { name: "Git", level: 80, category: "Tools" },
+  { name: "Docker", level: 50, category: "Tools" },
+  { name: "Figma", level: 70, category: "Tools" },
 ];
 
 export const experiences: Experience[] = [
   {
-    role: "Frontend Developer",
-    company: "Tech Company ABC",
-    period: "2025 - Present",
-    description: "Membangun dan maintain aplikasi web skala enterprise dengan React dan Next.js.",
-    tech: ["React", "Next.js", "TypeScript", "GraphQL"],
-  },
-  {
-    role: "Junior Web Developer",
-    company: "Startup XYZ",
-    period: "2024 - 2025",
-    description: "Develop fitur-fitur baru untuk platform e-commerce dan optimasi performa.",
-    tech: ["React", "Node.js", "MongoDB", "AWS"],
-  },
-  {
-    role: "Freelance Developer",
+    role: "Freelance Web Developer",
     company: "Self-employed",
-    period: "2023 - 2024",
-    description: "Mengerjakan berbagai project web untuk klien lokal dan internasional.",
-    tech: ["React", "Vue.js", "PHP", "MySQL"],
+    period: "2024 - Present",
+    description: "Building custom websites and web applications for local and international clients. Focused on creating responsive, user-friendly interfaces with modern technologies.",
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+  },
+  {
+    role: "Personal Projects",
+    company: "Self-learning",
+    period: "2023 - Present",
+    description: "Developing various web projects to enhance skills and explore new technologies. Building portfolio websites, landing pages, and full-stack applications.",
+    tech: ["React", "Vue.js", "JavaScript", "MongoDB", "PostgreSQL"],
   },
 ];
 
 export const education = [
   {
-    degree: "S1 Teknik Informatika",
-    institution: "Universitas ABC",
-    period: "2019 - 2023",
-    gpa: "3.75/4.00",
+    degree: "Bachelor of Informatics Engineering",
+    institution: "Universitas Tabanan",
+    period: "Aug 2025 - Present",
+    gpa: "Active Student",
   },
 ];
 
 export const certifications = [
   {
-    name: "Meta Frontend Developer Professional Certificate",
-    issuer: "Coursera",
-    date: "2025",
-    url: "https://coursera.org/certificate/xxx",
+    name: "React Bootcamp",
+    issuer: "wpu course",
+    date: "In Progress",
+    url: "https://wpucourse.id",
   },
   {
-    name: "AWS Certified Cloud Practitioner",
-    issuer: "Amazon Web Services",
-    date: "2024",
-    url: "https://aws.amazon.com/certification/xxx",
+    name: "Full Stack Next JS : Realtime Point Of Sale Apps",
+    issuer: "wpu course",
+    date: "In Progress",
+    url: "https://wpucourse.id",
+  },
+  {
+    name: "Belajar MERN Stack : MongoDB, Express, React, Node JS",
+    issuer: "wpu course",
+    date: "In Progress",
+    url: "https://wpucourse.id",
   },
 ];

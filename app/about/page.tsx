@@ -1,12 +1,12 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { Code2, Briefcase, GraduationCap, Award, Heart } from "lucide-react";
+import { Terminal, Briefcase, GraduationCap, Award, Heart } from "lucide-react";
 import { BentoCard } from "@/components/ui/bento-card";
 import { Badge } from "@/components/ui/badge";
 import { skills, experiences, education, certifications } from "@/lib/about";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About | Armanta Bali",
   description: "Learn more about me, my journey as a Frontend Developer, my skills, and what drives my passion for building great web experiences.",
 };
 
@@ -14,26 +14,28 @@ export default function AboutPage() {
   const skillCategories = Array.from(new Set(skills.map(s => s.category)));
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 px-4 py-8 md:p-8 lg:p-12">
-      <div className="container-bento max-w-5xl">
+    <div className="min-h-screen bg-zinc-950 text-zinc-100 px-4 pt-16 md:pt-20 py-8 md:p-8 lg:p-12">
+      <div className="container-bento max-w-5xl mt-20">
         
         {/* Header */}
         <div className="flex flex-col md:flex-row gap-8 mb-16">
           <div className="relative w-48 h-48 rounded-full overflow-hidden shrink-0 mx-auto md:mx-0">
             <Image
-              src="/profile.jpg"
-              alt="Profile"
+              src="/profile.jpeg"
+              alt="Armanta Bali - Frontend Developer"
               fill
               className="object-cover"
+              priority
+              sizes="192px"
             />
           </div>
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">About Me</h1>
             <p className="text-zinc-400 text-lg leading-relaxed mb-6">
-              Saya adalah Frontend Developer dengan passion dalam membangun antarmuka web yang tidak hanya indah, tetapi juga cepat, aksesibel, dan user-friendly. Dengan pengalaman lebih dari 2 tahun, saya telah mengerjakan berbagai project dari startup hingga enterprise.
+              I'm a Frontend Developer passionate about building web interfaces that are not only beautiful but also fast, accessible, and user-friendly. With over 2 years of experience, I've worked on various projects ranging from startups to enterprise-level applications.
             </p>
             <p className="text-zinc-400 text-lg leading-relaxed">
-              Saya percaya bahwa teknologi terbaik adalah yang tidak terlihat - yang membuat pengguna fokus pada tujuan mereka, bukan pada antarmuka. Itulah yang saya upayakan dalam setiap project yang saya kerjakan.
+              I believe the best technology is invisible — it allows users to focus on their goals, not the interface. That's what I strive for in every project I work on.
             </p>
           </div>
         </div>
@@ -41,7 +43,7 @@ export default function AboutPage() {
         {/* Skills */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-8">
-            <Code2 className="w-6 h-6 text-blue-400" />
+            <Terminal className="w-6 h-6 text-blue-400" />
             <h2 className="text-3xl font-bold">Skills & Expertise</h2>
           </div>
 
@@ -144,7 +146,7 @@ export default function AboutPage() {
           </div>
           <BentoCard>
             <p className="text-zinc-400 text-lg leading-relaxed">
-              Saat tidak sedang coding, saya suka mengeksplorasi kopi single origin dari berbagai daerah, membaca buku sci-fi dan teknologi, bermain game indie, dan hiking di akhir pekan. Saya juga aktif berkontribusi di open source projects dan menulis artikel teknis di blog pribadi.
+              When I'm not coding, I enjoy exploring single-origin coffee from different regions, reading sci-fi and tech books, playing indie games, and hiking on weekends. I'm also actively contributing to open-source projects and writing technical articles on my personal blog.
             </p>
           </BentoCard>
         </div>
