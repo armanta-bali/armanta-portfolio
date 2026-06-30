@@ -1,68 +1,71 @@
 import { Skill, Experience } from "./types";
 
 export const skills: Skill[] = [
-  // Frontend
-  { name: "React", level: 85, category: "Frontend" },
-  { name: "Next.js", level: 80, category: "Frontend" },
-  { name: "TypeScript", level: 75, category: "Frontend" },
-  { name: "Tailwind CSS", level: 90, category: "Frontend" },
-  { name: "HTML/CSS", level: 90, category: "Frontend" },
-  
-  // Backend
-  { name: "Node.js", level: 70, category: "Backend" },
-  { name: "Express", level: 65, category: "Backend" },
-  { name: "PostgreSQL", level: 60, category: "Backend" },
-  { name: "MongoDB", level: 65, category: "Backend" },
-  
-  // Tools
-  { name: "Git", level: 80, category: "Tools" },
-  { name: "Docker", level: 50, category: "Tools" },
-  { name: "Figma", level: 70, category: "Tools" },
+  // Programming Languages
+  { name: "JavaScript (ES6+)", level: 90, category: "Programming Languages" },
+  { name: "TypeScript", level: 85, category: "Programming Languages" },
+  { name: "HTML5", level: 95, category: "Programming Languages" },
+  { name: "CSS3", level: 95, category: "Programming Languages" },
+
+  // Frameworks & Libraries
+  { name: "React.js", level: 90, category: "Frameworks & Libraries" },
+  { name: "Next.js", level: 85, category: "Frameworks & Libraries" },
+  { name: "Tailwind CSS", level: 90, category: "Frameworks & Libraries" },
+  { name: "Framer Motion", level: 75, category: "Frameworks & Libraries" },
+
+  // Tools & Technologies
+  { name: "Git", level: 85, category: "Tools & Technologies" },
+  { name: "GitHub", level: 85, category: "Tools & Technologies" },
+  { name: "Vite", level: 80, category: "Tools & Technologies" },
+  { name: "Webpack", level: 70, category: "Tools & Technologies" },
+  { name: "Vercel", level: 85, category: "Tools & Technologies" },
+  { name: "RESTful APIs", level: 80, category: "Tools & Technologies" },
+
+  // Concepts & Practices
+  {
+    name: "Responsive Web Design",
+    level: 95,
+    category: "Concepts & Practices",
+  },
+  { name: "UI/UX Implementation", level: 85, category: "Concepts & Practices" },
+  {
+    name: "Web Performance Optimization",
+    level: 85,
+    category: "Concepts & Practices",
+  },
+  { name: "State Management", level: 80, category: "Concepts & Practices" },
+  {
+    name: "Mobile-First Development",
+    level: 90,
+    category: "Concepts & Practices",
+  },
 ];
 
 export const experiences: Experience[] = [
   {
-    role: "Freelance Web Developer",
-    company: "Self-employed",
-    period: "2024 - Present",
-    description: "Building custom websites and web applications for local and international clients. Focused on creating responsive, user-friendly interfaces with modern technologies.",
-    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
-  },
-  {
-    role: "Personal Projects",
-    company: "Self-learning",
-    period: "2023 - Present",
-    description: "Developing various web projects to enhance skills and explore new technologies. Building portfolio websites, landing pages, and full-stack applications.",
-    tech: ["React", "Vue.js", "JavaScript", "MongoDB", "PostgreSQL"],
+    role: "Freelance Frontend Developer",
+    company: "Self-Employed / Freelance",
+    period: "Feb 2026 - Present",
+    description:
+      "Developing and deploying production-ready websites for real clients, translating UI/UX designs into responsive, pixel-perfect interfaces. Managing full frontend development lifecycle from requirement gathering to deployment.",
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
   },
 ];
 
 export const education = [
   {
-    degree: "Bachelor of Informatics Engineering",
+    degree: "Bachelor's Degree in Information Systems",
     institution: "Universitas Tabanan",
-    period: "Aug 2025 - Present",
-    gpa: "Active Student",
+    period: "2025 - Present",
+    gpa: "", // Kosongkan karena belum ada IPK
   },
 ];
 
 export const certifications = [
   {
-    name: "React Bootcamp",
-    issuer: "wpu course",
-    date: "In Progress",
-    url: "https://wpucourse.id",
-  },
-  {
-    name: "Full Stack Next JS : Realtime Point Of Sale Apps",
-    issuer: "wpu course",
-    date: "In Progress",
-    url: "https://wpucourse.id",
-  },
-  {
-    name: "Belajar MERN Stack : MongoDB, Express, React, Node JS",
-    issuer: "wpu course",
-    date: "In Progress",
-    url: "https://wpucourse.id",
+    name: "Responsive Web Design Professional Certificate",
+    issuer: "freeCodeCamp",
+    date: "2026",
+    url: "https://www.freecodecamp.org/certification/armanta/responsive-web-design-v9",
   },
 ];
